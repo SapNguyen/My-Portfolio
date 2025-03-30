@@ -61,15 +61,14 @@ export default function Education() {
                   </p>
                 </div>
 
-                <div className="relative w-[150px] h-[100px] ml-6">
-                <Image
-                  src={edu.image}
-                  alt={`Hình ảnh của trường ${edu.school}`}
-                  width={500} 
-                  height={300} 
-                  className="rounded-lg border-4 border-blue-400 shadow-lg"
-                  style={{ objectFit: "cover" }}
-                />
+                <div className="relative w-[150px] h-[200px] ml-6">
+                  <Image
+                    src={edu.image}
+                    alt={`Hình ảnh của trường ${edu.school}`}
+                    width={150}
+                    height={200}
+                    className="rounded-lg border-4 border-blue-400 shadow-lg object-cover"
+                  />
                 </div>
               </motion.div>
             ))}
@@ -83,14 +82,13 @@ export default function Education() {
           transition={{ duration: 1, type: "spring", stiffness: 100 }}
         >
           <div className="relative w-[400px] h-[500px]">
-          <Image
-            src="/images/education.jpg"
-            alt="Học vấn"
-            width={400}
-            height={500}
-            className="rounded-lg border-4 border-blue-400 shadow-xl"
-            style={{ objectFit: "cover" }} 
-          />
+            <Image
+              src="/images/education.jpg"
+              alt="Học vấn"
+              width={400}
+              height={500}
+              className="rounded-lg border-4 border-blue-400 shadow-xl object-cover"
+            />
           </div>
         </motion.div>
       </div>
